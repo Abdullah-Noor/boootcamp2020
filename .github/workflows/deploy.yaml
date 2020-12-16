@@ -30,9 +30,9 @@ jobs:
         uses: actions/setup-node@v2-beta
         with :
           node-version:  12
-        -name : Install surge
-          run : npm install --globally surge
-         -name : Run surge
-          run : surge./idiotic-bee.surge.sh --token $ {{secrets.SURGE_TOKEN}}
+      -  name : Install surge
+         run : npm install -g surge
+      -  name : Run Surge
+         run : surge./idiotic-bee.surge.sh --token $ {{secrets.SURGE_TOKEN}}
         
         
