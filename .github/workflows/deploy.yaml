@@ -31,7 +31,7 @@ jobs:
         with :
           node-version:  12
         -name : Install surge
-         run : npm install --globally surge
+          run : npm install --globally surge
          -name : Run surge
           run : surge./idiotic-bee.surge.sh --token $ {{secrets.SURGE_TOKEN}}
         
